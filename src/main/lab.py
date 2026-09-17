@@ -11,6 +11,14 @@ cursor = conn.cursor() "TODO: create a cursor with the connection"
 
 # Create a dogs table with autoincrementing ID
 def create_dogs_table():
+    cursor.execute("""
+CREATE TABLE dogs IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    breed TEXT,
+    age INTEGER
+)
+""")
 
     """TODO"""
 
