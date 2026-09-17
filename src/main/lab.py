@@ -6,7 +6,7 @@ import sqlite3
 
 
 conn = sqlite3.connect("my_database.db") "TODO: Create a database connection"
-cursor = "TODO: create a cursor with the connection"
+cursor = conn.cursor() "TODO: create a cursor with the connection"
 
 
 # Create a dogs table with autoincrementing ID
