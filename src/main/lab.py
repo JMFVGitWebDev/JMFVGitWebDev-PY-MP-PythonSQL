@@ -30,9 +30,10 @@ def insert_dog(name, breed, age):
 
     query = "INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)"
 
-   
+    data = (name, breed, age)
 
-    cursor.execute("INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)", (name, breed, age))
+    cursor.execute("INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)", data)
+    #cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", user_data)
 
     """TODO"""
 
