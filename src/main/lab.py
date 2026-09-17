@@ -49,7 +49,7 @@ def select_all_dogs():
 
     # return the rows
      cursor.execute("""
-    SELECT * from dogs
+    SELECT * FROM dogs
     """)
 
     rows = cursor.fetchall()
