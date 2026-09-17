@@ -32,7 +32,7 @@ def insert_dog(name, breed, age):
 
    
 
-    cursor.execute(query, (name, breed, age))
+    cursor.execute("INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)", (name, breed, age))
 
     """TODO"""
 
