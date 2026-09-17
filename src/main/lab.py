@@ -28,10 +28,7 @@ CREATE TABLE IF NOT EXISTS dogs (
 # TODO: Complete insert_dog() by inserting a new dog (provided in the parameters) into the "dogs" table.
 def insert_dog(name, breed, age):
 
-    #query = "INSERT INTO dogs (name, breed, age) VALUES (%s, %s, %s)"
-
-    query = "INSERT INTO dogs (name, breed, age) "
-  "VALUES (%s, %s, %s, %s)"
+    query = "INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)"
 
     dog_data = (name, breed, age)
 
