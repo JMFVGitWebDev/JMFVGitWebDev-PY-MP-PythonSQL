@@ -5,7 +5,7 @@ as well as creating a table, inserting data, and selecting that data.
 import sqlite3
 
 
-conn = "TODO: Create a database connection"
+conn = sqlite3.connect("my_database.db") "TODO: Create a database connection"
 cursor = "TODO: create a cursor with the connection"
 
 
