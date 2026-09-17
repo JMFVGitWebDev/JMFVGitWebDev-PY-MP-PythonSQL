@@ -5,8 +5,10 @@ as well as creating a table, inserting data, and selecting that data.
 import sqlite3
 
 
-conn = sqlite3.connect("my_database.db") "TODO: Create a database connection"
-cursor = conn.cursor() "TODO: create a cursor with the connection"
+conn = sqlite3.connect("my_database.db") 
+"TODO: Create a database connection"
+cursor = conn.cursor() 
+"TODO: create a cursor with the connection"
 
 
 # Create a dogs table with autoincrementing ID
