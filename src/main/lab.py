@@ -34,7 +34,7 @@ def insert_dog(name, breed, age):
     #dog_data = (name, breed, age)
 
     #cursor.execute(query, dog_data)
-    cursor.execute(f"INSERT INTO users (name, age) VALUES ({name}, {breed}, {age})")
+    cursor.execute(f"INSERT INTO dogs (name, age) VALUES ({name}, {breed}, {age})")
 
     """TODO"""
 
