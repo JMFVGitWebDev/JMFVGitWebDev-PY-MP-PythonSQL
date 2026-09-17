@@ -54,4 +54,4 @@ def select_all_dogs():
 
     rows = cursor.fetchall()
 
-    return rows
+    return cursor.fetchall()
