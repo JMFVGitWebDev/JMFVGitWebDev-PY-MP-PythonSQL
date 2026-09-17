@@ -32,7 +32,7 @@ def insert_dog(name, breed, age):
 
     dog_data = (name, breed, age)
 
-    cursor.execute("INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)", name)
+    cursor.execute("INSERT INTO dogs (name, breed, age) VALUES (?, ?, ?)", [name], [breed], [age])
     #cursor.execute("INSERT INTO users (name, age) VALUES (?, ?)", user_data)
 
     """TODO"""
