@@ -14,7 +14,7 @@ cursor = conn.cursor()
 # Create a dogs table with autoincrementing ID
 def create_dogs_table():
     cursor.execute("""
-CREATE TABLE dogs IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS dogs (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     breed TEXT,
