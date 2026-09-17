@@ -48,6 +48,10 @@ def insert_dog(name, breed, age):
 def select_all_dogs():
 
     # return the rows
-    return cursor.execute("""
+     cursor.execute("""
     SELECT * from dogs
     """)
+
+    rows = cursor.fetchall()
+
+    return rows
